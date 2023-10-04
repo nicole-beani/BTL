@@ -5,22 +5,34 @@
 @Styles.Render("~/Content/Site.css")
 <body>
     <main class="d-flex justify-content-between ">
+
         <div class="pe-5 me-5">
             <div>
                 <h3>Sei un nostro cliente?</h3>
                 <h4>Trova la tua spedizione</h4>
                 <p><a class="btn btn-danger" @Html.ActionLink("Cerca", "Tracking", "Tracking", new { area = "" }, new { @class = "nav-link" })</a></p>
             </div>
-            <div>
-                <h3>Sei un amministratore?</h3>
-                <p><a class="btn btn-danger" @Html.ActionLink("Accedi", "Amministratori", "Amministratori", new { area = "" }, new { @class = "nav-link" })</a></p>
-            </div>
+            @if (User.IsInRole("admin"))
+            {
+                
+
+            }
+            else
+            {
+                <div>
+                    <h3>Sei un amministratore?</h3>
+                  <p> <a class="btn btn-danger" href="https://localhost:44309/Amministratori/Amministratori">Accedi</a></p>
+
+
+                </div>
+            }
         </div>
+       
         <img id="imgCentrale" src="https://www.fruitbookmagazine.it/wp-content/uploads/2023/02/bartolini-1.jpg" />
         <div class="row ms-5">
             <section class="col-md-9">
 
-                <h2>La nostra responsabilità per l’uomo e l’ambiente</h2>
+                <h3>La nostra responsabilità per l’uomo e l’ambiente</h3>
                 <p>
                     Per noi «sostenibilità» non è solo una parola ma un dovere: siamo perfettamente coscienti della responsabilità che abbiamo nei confronti della Terra e dei suoi abitanti e traduciamo attivamente questa coscienza in azioni reali.
 
@@ -28,15 +40,7 @@
                 </p>
 
             </section>
-            <section class="col-md-9">
-                <h2>Servizi per il tuo Ecommerce</h2>
-                <p>
-                    Oggi lo shopping online richiede massima flessibilità, velocità ed efficienza in ogni fase, anche durante la consegna. Per questo mettiamo a tua disposizione una gamma di servizi dedicati al mondo Ecommerce, per rendere la tua attività ancora più semplice, sicura e performante.
-
-
-                </p>
-
-            </section>
+           
 
         </div>
 

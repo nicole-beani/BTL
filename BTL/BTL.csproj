@@ -121,6 +121,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AmministratoriController.cs" />
+    <Compile Include="Controllers\GestioneAziendeController.cs" />
+    <Compile Include="Controllers\GestionePrivatiController.cs" />
     <Compile Include="Controllers\GestioneSpedizioniController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TrackingController.cs" />
@@ -129,6 +131,8 @@
     </Compile>
     <Compile Include="Models\Amministratori.cs" />
     <Compile Include="Models\DB.cs" />
+    <Compile Include="Models\GestioneAziende.cs" />
+    <Compile Include="Models\GestionePrivati.cs" />
     <Compile Include="Models\GestioneSpedizioni.cs" />
     <Compile Include="Models\SiteRole.cs" />
     <Compile Include="Models\Tracking.cs" />
@@ -186,8 +190,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Amministratori\Amministratori.cshtml" />
     <Content Include="Views\Tracking\Tracking.cshtml" />
-    <Content Include="Views\Tracking\View.cshtml" />
-    <Content Include="Views\GestioneSpedizioni\GestioneSpedizioni.cshtml" />
+    <Content Include="Views\GestioneSpedizioni\AggiungiSpedizioni.cshtml" />
+    <Content Include="Views\GestionePrivati\AggiungiGestionePrivati.cshtml" />
+    <Content Include="Views\GestioneAziende\AggiungiGestioneAziende.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

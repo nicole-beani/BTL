@@ -18,7 +18,7 @@ namespace BTL.Models
 
        public static List <GestioneSpedizioni> ListaSpedizioni { get; set; }= new List<GestioneSpedizioni> ();
 
-        GestioneSpedizioni() { }
+       public GestioneSpedizioni() { }
         public GestioneSpedizioni(string mittente, string nomeDestinatario, string indirizzoDestinazione, string cittàDestinazione, double costo, double peso, DateTime dataSpedizione, DateTime dataStimataConsegna)
         {
             Mittente = mittente;

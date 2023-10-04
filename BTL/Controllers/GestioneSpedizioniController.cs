@@ -22,6 +22,7 @@ namespace BTL.Controllers
         [HttpGet]
         public ActionResult AggiungiSpedizioni()
         {
+
             return View();
         }
 
@@ -48,18 +49,13 @@ namespace BTL.Controllers
                     sqlCommand.Parameters.AddWithValue("Mittente", newSpezione.Mittente);
                     sqlCommand.Parameters.AddWithValue("DataStimataConsegna", newSpezione.DataStimataConsegna);
 
-                    int insertedSuccessfully = cmd.ExecuteNonQuery();
+                   cmd.ExecuteNonQuery();
 
-                    if (insertedSuccessfully > 0)
-                    {
-                        Response.Write("Inserted into database!");
-
-                    }
 
                 }
                 catch (Exception ex)
                 {
-                    Response.Write("Error" + ex.Message);
+                    
                 }
                 finally
                 { sqlConnection.Close(); }

@@ -34,3 +34,7 @@ textarea {
 #corriere {
     width: 8%
 }
+
+.form-group {
+    padding: 10px;
+}

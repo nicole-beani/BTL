@@ -53,7 +53,7 @@ namespace BTL.Models
 
             while (reader.Read())
             {
-                string ruolo = reader["Role"].ToString();
+                string ruolo = reader["Ruolo"].ToString();
                 roles.Add(ruolo);
             }
 

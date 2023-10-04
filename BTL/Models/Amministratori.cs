@@ -7,10 +7,11 @@ namespace BTL.Models
 {
     public class Amministratori
     {
+        public int IdLoginAmm { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Ruolo { get; set; }
-        Amministratori() { }
+       public Amministratori() { }
         public Amministratori(string username, string password, string ruolo)
         {
             Username = username;
