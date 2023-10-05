@@ -130,7 +130,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Amministratori.cs" />
-    <Compile Include="Models\DB.cs" />
     <Compile Include="Models\GestioneAziende.cs" />
     <Compile Include="Models\GestionePrivati.cs" />
     <Compile Include="Models\GestioneSpedizioni.cs" />
@@ -193,6 +192,9 @@
     <Content Include="Views\GestioneSpedizioni\AggiungiSpedizioni.cshtml" />
     <Content Include="Views\GestionePrivati\AggiungiGestionePrivati.cshtml" />
     <Content Include="Views\GestioneAziende\AggiungiGestioneAziende.cshtml" />
+    <Content Include="Views\GestioneSpedizioni\Index.cshtml" />
+    <Content Include="Views\GestionePrivati\Index.cshtml" />
+    <Content Include="Views\GestioneAziende\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
